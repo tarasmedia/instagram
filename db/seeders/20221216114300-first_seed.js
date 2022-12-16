@@ -4,7 +4,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Posts', [
-      { picture: 'https://images.hdqwalls.com/download/horizon-zero-dawn-nature-mountains-trees-sky-4k-yj-1600x1200.jpg', text: 'cool!' }]
+      { picture: 'https://images.hdqwalls.com/download/horizon-zero-dawn-nature-mountains-trees-sky-4k-yj-1600x1200.jpg', text: 'cool!', createdAt: new Date(), updatedAt: new Date() }]
       /**
        * Add seed commands here.
        *
